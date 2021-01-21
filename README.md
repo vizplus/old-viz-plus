@@ -1,2 +1,3 @@
-# viz-plus
-Main viz.plus page
+# VIZ.plus
+
+Главная страница viz.plus с презентацией и пошаговым руководством.

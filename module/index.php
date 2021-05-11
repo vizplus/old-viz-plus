@@ -3,67 +3,27 @@ ob_start();
 $replace['title']='Главная - '.$replace['title'];
 print '
 <div class="cards-view">
-	<div class="cards-container">
-		<div class="card">
+	<div class="cards-container">';
+		print '
+		<div class="card adaptive-hide-block">
 			<div class="presentation">
 				<div class="slide current" data-num="1" data-start="false" data-timeout="8000">
-					<div class="text-wrapper full" style="background:url(\'/next-slide.svg\') right bottom no-repeat #4285f4;">
+					<div class="image-wrapper full" style="color:#4285f4;flex-direction:column;">
 						<div class="primary-text text-center text-big">
 							<strong>Что такое ВИЗ?</strong>
 						</div>
-						<div class="secondary-text text-center" style="padding-top:2vh;">Понятное объяснение в картинках</div>
+						<img src="/illustrations/2-5-2.svg" alt="" style="max-height:95vh;max-width:95vw;padding:0 15px;" />
+						<div class="secondary-text text-center" style="padding-top:1.5vh;">Понятное объяснение в картинках</div>
 					</div>
 				</div>
 
-				<div class="slide" data-num="2">
+				<div class="slide" data-num="2" data-old-num="5">
 					<div class="image-wrapper half">
-						<img src="/illustrations/1.svg" alt="" />
+						<img src="/illustrations/2-1-2.svg" alt="" style="width:95%" />
 					</div>
 					<div class="text-wrapper half">
 						<div class="primary-text">
-							<strong>Делать что-то для других за деньги &ndash; это работа</strong>
-						</div>
-						<div class="secondary-text">
-							Вы обмениваете свои время, знания и силы на заранее известную сумму денег
-						</div>
-					</div>
-				</div>
-
-				<div class="slide" data-num="3">
-					<div class="image-wrapper half">
-						<img src="/illustrations/2.svg" alt="" />
-					</div>
-					<div class="text-wrapper half">
-						<div class="primary-text">
-							Делать что-то интересное для себя &ndash; это <strong>отдых и развитие</strong>
-						</div>
-						<div class="secondary-text">
-							Вы тратите заработанные деньги на восстановление сил и новые впечатления
-						</div>
-					</div>
-				</div>
-
-				<div class="slide" data-num="4">
-					<div class="image-wrapper half">
-						<img src="/illustrations/3.svg" alt="" />
-					</div>
-					<div class="text-wrapper half">
-						<div class="primary-text">
-							Делать что-то для других, не ожидая награды &ndash; <strong>что это?</strong>
-						</div>
-						<div class="secondary-text">
-							Не работа и не отдых, а новое, интересное и быстро растущее явление в нашей жизни
-						</div>
-					</div>
-				</div>
-
-				<div class="slide" data-num="5">
-					<div class="image-wrapper half">
-						<img src="/illustrations/4.svg" alt="" />
-					</div>
-					<div class="text-wrapper half">
-						<div class="primary-text">
-							Когда вы делаете что-то для других не за деньги, <strong>люди вам благодарны</strong>
+							Когда вы делаете что-то для других, <strong>люди вам благодарны</strong>
 						</div>
 						<div class="secondary-text">
 							Лайки, спасибо, аплодисменты, плюсы и большие пальцы вверх &ndash; это проявления благодарности
@@ -71,7 +31,7 @@ print '
 					</div>
 				</div>
 
-				<div class="slide" data-num="6">
+				<div class="slide" data-num="3" data-old-num="6">
 					<div class="image-wrapper half">
 						<img src="/illustrations/5.svg" alt="" />
 					</div>
@@ -85,35 +45,7 @@ print '
 					</div>
 				</div>
 
-				<div class="slide" data-num="7">
-					<div class="image-wrapper half">
-						<img src="/illustrations/6.svg" alt="" />
-					</div>
-					<div class="text-wrapper half">
-						<div class="primary-text">
-							Когда другие вам благодарны, они готовы что-то <strong>сделать для вас</strong>
-						</div>
-						<div class="secondary-text">
-							Люди отвечают на ваши вопросы, делятся информацией, помогают решать проблемы
-						</div>
-					</div>
-				</div>
-
-				<div class="slide" data-num="8">
-					<div class="image-wrapper half">
-						<img src="/illustrations/7.svg" alt="" />
-					</div>
-					<div class="text-wrapper half">
-						<div class="primary-text">
-							Чем выше ваш социальный капитал, <strong>тем охотнее люди помогают вам</strong>
-						</div>
-						<div class="secondary-text">
-							Если вы приносите много пользы другим, они рады принести больше пользы вам
-						</div>
-					</div>
-				</div>
-
-				<div class="slide" data-num="9">
+				<div class="slide" data-num="4" data-old-num="9">
 					<div class="image-wrapper half">
 						<img src="/illustrations/8.svg" alt="" />
 					</div>
@@ -127,41 +59,42 @@ print '
 					</div>
 				</div>
 
-				<div class="slide" data-num="10">
+				<div class="slide" data-num="5">
 					<div class="image-wrapper half">
-						<img src="/illustrations/9.svg" alt="" />
+						<img src="/illustrations/2-3.svg" alt="" />
 					</div>
 					<div class="text-wrapper half">
 						<div class="primary-text">
-							ВИЗ хранит ваш социальный капитал <strong>в блокчейне</strong>
+							Накапливайте и используйте социальный капитал, <strong>где вам удобно</strong>
 						</div>
 						<div class="secondary-text">
-							Блокчейн &ndash; безопасная система. Никто не имеет доступа к вашему социальному капиталу
+							ВИЗ-аккаунт можно подключить к социальным сетям, мессенджерам, сайтам, приложениям, играм и к реальной жизни
 						</div>
 					</div>
 				</div>
 
-				<div class="slide" data-num="11">
+				<div class="slide" data-num="6" data-old-num2="11">
 					<div class="image-wrapper half">
-						<img src="/illustrations/10.svg" alt="" />
+						<img src="/illustrations/2-4.svg" alt="" />
 					</div>
 					<div class="text-wrapper half">
 						<div class="primary-text">
-							В ВИЗе нет «начальников», зато есть настоящая <strong>блокчейн-демократия</strong>
+							Ваш социальный капитал <strong>сохранится</strong>, несмотря ни на что
 						</div>
 						<div class="secondary-text">
-							Каждый может влиять на все решения в соответствии со своим социальным капиталом
+							Если ваш аккаунт в соцсети или мессенджере заблокируют, это не повлияет на накопленный вами социальный капитал
 						</div>
 					</div>
 				</div>
 
-				<div class="slide" data-num="12">
+
+				<div class="slide" data-num="7" data-old-num2="9" data-old-num="12">
 					<div class="image-wrapper half">
 						<img src="/illustrations/11.svg" alt="" />
 					</div>
 					<div class="text-wrapper half">
 						<div class="primary-text">
-							Когда вы благодарите других в ВИЗе, их социальный капитал <strong>повышается</strong>
+							Когда вы благодарите других, их социальный капитал <strong>повышается</strong>
 						</div>
 						<div class="secondary-text">
 							Свободно поддерживайте всех, кто вам нравится, кто приносит вам пользу или удовольствие
@@ -169,7 +102,8 @@ print '
 					</div>
 				</div>
 
-				<div class="slide" data-num="13">
+
+				<div class="slide" data-num="8" data-old-num2="10" data-old-num="13">
 					<div class="image-wrapper half">
 						<img src="/illustrations/12.svg" alt="" />
 					</div>
@@ -183,23 +117,9 @@ print '
 					</div>
 				</div>
 
-				<div class="slide" data-num="14">
+				<div class="slide" data-num="9" data-old-num2="7" data-old-num="15">
 					<div class="image-wrapper half">
-						<img src="/illustrations/13.svg" alt="" />
-					</div>
-					<div class="text-wrapper half">
-						<div class="primary-text">
-							Чем больше ваш социальный капитал, тем <strong>сильнее</strong> вы награждаете других
-						</div>
-						<div class="secondary-text">
-							Награждайте многих людей понемногу или крупно награждайте некоторых
-						</div>
-					</div>
-				</div>
-
-				<div class="slide" data-num="15">
-					<div class="image-wrapper half">
-						<img src="/illustrations/14.svg" alt="" />
+						<img src="/illustrations/2-2-2.svg" alt="" style="width:98%" />
 					</div>
 					<div class="text-wrapper half">
 						<div class="primary-text">
@@ -211,21 +131,54 @@ print '
 					</div>
 				</div>
 
-				<div class="slide" data-num="16">
+				<div class="slide" data-num="10" data-old-num2="6" data-old-num="14">
 					<div class="image-wrapper half">
-						<img src="/illustrations/15.svg" alt="" />
+						<img src="/illustrations/13.svg" alt="" />
 					</div>
 					<div class="text-wrapper half">
 						<div class="primary-text">
-							Накопившийся социальный капитал в ВИЗе можно <strong>превратить в деньги</strong>
+							Чем больше ваш социальный капитал, тем <strong>сильнее</strong> вы награждаете
 						</div>
 						<div class="secondary-text">
-							Если вы очень популярны, продавайте свободный капитал, монетизируйте свой успех
+							Награждайте многих людей понемногу или крупно награждайте некоторых
 						</div>
 					</div>
 				</div>
 
-				<div class="slide" data-num="17">
+
+				<div class="slide" data-num="11" data-old-num2="8" data-old-num="8">
+					<div class="image-wrapper half">
+						<img src="/illustrations/7.svg" alt="" />
+					</div>
+					<div class="text-wrapper half">
+						<div class="primary-text">
+							Чем больше ваш социальный капитал, <strong>тем охотнее люди помогают вам</strong>
+						</div>
+						<div class="secondary-text">
+							Если вы приносите много пользы другим, они рады принести больше пользы вам
+						</div>
+					</div>
+				</div>
+
+				<div class="slide" data-num="12" data-old-num="10">
+					<div class="image-wrapper half" style="color:#4285f4;flex-direction:column;">
+						<div class="primary-text text-center text-big" style="font-size:1.5em">
+							Только вы управляете своим социальным капиталом
+						</div>
+						<img src="/illustrations/9-2.svg" alt="" class="with-text" style="max-width:98%" />
+						<div class="secondary-text text-center" style="font-size:1.5em;padding-top:2.5vh;">без посредников, запретов, банов и цензуры</div>
+					</div>
+					<div class="text-wrapper half">
+						<div class="primary-text">
+							ВИЗ хранит ваш социальный капитал в блокчейне
+						</div>
+						<div class="secondary-text">
+							Блокчейн – безопасная система. Никто не имеет доступа к вашему социальному капиталу
+						</div>
+					</div>
+				</div>
+
+				<div class="slide" data-num="13" data-old-num="17">
 					<div class="image-wrapper half">
 						<img src="/illustrations/16.svg" alt="" />
 					</div>
@@ -239,7 +192,21 @@ print '
 					</div>
 				</div>
 
-				<div class="slide" data-num="18">
+				<div class="slide" data-num="14" data-old-num="16">
+					<div class="image-wrapper half">
+						<img src="/illustrations/15.svg" alt="" />
+					</div>
+					<div class="text-wrapper half">
+						<div class="primary-text">
+							Накопившийся социальный капитал в ВИЗе можно <strong>превратить в деньги</strong>
+						</div>
+						<div class="secondary-text">
+							Если вы очень популярны, продавайте свободный капитал, монетизируйте свой успех
+						</div>
+					</div>
+				</div>
+
+				<div class="slide" data-num="15" data-old-num="18">
 					<div class="image-wrapper half">
 						<img src="/illustrations/17.svg" alt="" />
 					</div>
@@ -252,13 +219,274 @@ print '
 						</div>
 					</div>
 				</div>
-
-				<div class="slide" data-num="19" data-end="true">
+				<div class="slide" data-num="16" data-old-num="19" data-end="true">
 					<div class="text-wrapper full">
 						<div class="primary-text">
 							В ВИЗе много других возможностей, о которых вы узнаете, когда начнёте его использовать.<br>
 							Например, <strong>прямо сейчас</strong>!<br>
-							<div class="text-right"><a class="close-presentation-action" href="#steps" style="box-shadow:none;font-size:1.5em;padding-bottom:5px;border-bottom:0px dashed #fff;">&darr;&darr;&darr;&darr;&darr;</a></div>
+							<center><a class="close-presentation-action" href="#steps" style="box-shadow:none;font-size:1.5em;padding-bottom:5px;border-bottom:0px dashed #fff;">&darr;&darr;&darr;&darr;&darr;</a></center>
+						</div>
+					</div>
+				</div>
+
+				<div class="progress">
+					<div class="fill-level">
+					</div>
+				</div>
+
+				<div class="slider">
+					<div class="fill-level">
+					</div>
+				</div>
+
+				<div class="player">
+					<a class="prev-action" title="Предыдущий слайд">«</a>
+					<a class="next-action" title="Следующий слайд">»</a>
+					<div class="bottom-line">
+						<span class="slide-counter">&mdash; / &mdash;</span>
+						<a class="toggle-fullscreen-action">Развернуть</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		';
+		//adaptive
+		print '<div class="card adaptive-show-block">
+			<div class="presentation">
+				<div class="slide current" data-num="1" data-start="false" data-timeout="8000">
+					<div class="image-wrapper full" style="color:#4285f4;flex-direction:column;">
+						<div class="primary-text text-center text-big">
+							<strong>Что такое ВИЗ?</strong>
+						</div>
+						<img src="/illustrations/2-5-2.svg" alt="" style="max-height:95vh" />
+						<div class="secondary-text text-center" style="padding-top:1.5vh;">Понятное объяснение в картинках</div>
+					</div>
+				</div>
+
+				<div class="slide" data-num="2">
+					<div class="text-wrapper full">
+						<div class="primary-text">
+							Когда вы делаете что-то для других, <strong>люди вам благодарны</strong>
+						</div>
+						<div class="secondary-text">
+							Лайки, спасибо, аплодисменты, плюсы и большие пальцы вверх &ndash; это проявления благодарности
+						</div>
+					</div>
+				</div>
+
+				<div class="slide" data-num="3">
+					<div class="image-wrapper full">
+						<img src="/illustrations/2-1-2.svg" alt="" style="width:98%" />
+					</div>
+				</div>
+
+				<div class="slide" data-num="4">
+					<div class="text-wrapper full">
+						<div class="primary-text">
+							Сумма благодарностей от многих людей &ndash; <strong>ваш социальный капитал</strong>
+						</div>
+						<div class="secondary-text">
+							Чем больше людей вам благодарны, тем больше ваш социальный капитал
+						</div>
+					</div>
+				</div>
+
+				<div class="slide" data-num="5">
+					<div class="image-wrapper full">
+						<img src="/illustrations/5.svg" alt="" />
+					</div>
+				</div>
+
+				<div class="slide" data-num="6">
+					<div class="text-wrapper full">
+						<div class="primary-text">
+							Накапливайте и используйте социальный капитал, <strong>где вам удобно</strong>
+						</div>
+						<div class="secondary-text">
+							ВИЗ-аккаунт можно подключить к социальным сетям, мессенджерам, сайтам, приложениям, играм и к реальной жизни
+						</div>
+					</div>
+				</div>
+
+				<div class="slide" data-num="7">
+					<div class="image-wrapper full">
+						<img src="/illustrations/2-3.svg" alt="" />
+					</div>
+				</div>
+
+				<div class="slide" data-num="8">
+					<div class="text-wrapper full">
+						<div class="primary-text">
+							Ваш социальный капитал <strong>сохранится</strong>, несмотря ни на что
+						</div>
+						<div class="secondary-text">
+							Если ваш аккаунт в соцсети или мессенджере заблокируют, это не повлияет на накопленный вами социальный капитал
+						</div>
+					</div>
+				</div>
+				<div class="slide" data-num="9">
+					<div class="image-wrapper full">
+						<img src="/illustrations/2-4.svg" alt="" />
+					</div>
+				</div>
+
+
+				<div class="slide" data-num="10">
+					<div class="text-wrapper full">
+						<div class="primary-text">
+							Когда вы благодарите других, их социальный капитал <strong>повышается</strong>
+						</div>
+						<div class="secondary-text">
+							Свободно поддерживайте всех, кто вам нравится, кто приносит вам пользу или удовольствие
+						</div>
+					</div>
+				</div>
+				<div class="slide" data-num="11">
+					<div class="image-wrapper full">
+						<img src="/illustrations/11.svg" alt="" />
+					</div>
+				</div>
+
+
+				<div class="slide" data-num="12">
+					<div class="text-wrapper full">
+						<div class="primary-text">
+							При этом ваш социальный капитал не снижается, вы <strong>ничего не отдаёте</strong>
+						</div>
+						<div class="secondary-text">
+							Награды берутся из постоянной относительно небольшой эмиссии в блокчейне
+						</div>
+					</div>
+				</div>
+				<div class="slide" data-num="13">
+					<div class="image-wrapper full">
+						<img src="/illustrations/12.svg" alt="" />
+					</div>
+				</div>
+
+				<div class="slide" data-num="14">
+					<div class="text-wrapper full">
+						<div class="primary-text">
+							Награждая других, вы мотивируете их делать что-то <strong>полезное или приятное для вас</strong>
+						</div>
+						<div class="secondary-text">
+							Люди охотнее отвечают на большую благодарность.<br>Влияйте на тех, кто вам нравится
+						</div>
+					</div>
+				</div>
+				<div class="slide" data-num="15">
+					<div class="image-wrapper full">
+						<img src="/illustrations/2-2-2.svg" alt="" style="width:98%" />
+					</div>
+				</div>
+
+				<div class="slide" data-num="16">
+					<div class="text-wrapper full">
+						<div class="primary-text">
+							Чем больше ваш социальный капитал, тем <strong>сильнее</strong> вы награждаете
+						</div>
+						<div class="secondary-text">
+							Награждайте многих людей понемногу или крупно награждайте некоторых
+						</div>
+					</div>
+				</div>
+				<div class="slide" data-num="17">
+					<div class="image-wrapper full">
+						<img src="/illustrations/13.svg" alt="" />
+					</div>
+				</div>
+
+
+				<div class="slide" data-num="18">
+					<div class="text-wrapper full">
+						<div class="primary-text">
+							Чем больше ваш социальный капитал, <strong>тем охотнее люди помогают вам</strong>
+						</div>
+						<div class="secondary-text">
+							Если вы приносите много пользы другим, они рады принести больше пользы вам
+						</div>
+					</div>
+				</div>
+				<div class="slide" data-num="19">
+					<div class="image-wrapper full">
+						<img src="/illustrations/7.svg" alt="" />
+					</div>
+				</div>
+
+				<div class="slide" data-num="20">
+					<div class="text-wrapper full">
+						<div class="primary-text">
+							ВИЗ хранит ваш социальный капитал в блокчейне
+						</div>
+						<div class="secondary-text">
+							Блокчейн – безопасная система. Никто не имеет доступа к вашему социальному капиталу
+						</div>
+					</div>
+				</div>
+				<div class="slide" data-num="21">
+					<div class="image-wrapper full" style="color:#4285f4;flex-direction:column;">
+						<div class="primary-text text-center text-big" style="font-size:1.5em">
+							Только вы управляете своим социальным капиталом
+						</div>
+						<img src="/illustrations/9-2.svg" alt="" class="with-text" />
+						<div class="secondary-text text-center" style="font-size:1.5em;padding-top:2.5vh;">без посредников, запретов, банов и цензуры</div>
+					</div>
+				</div>
+
+				<div class="slide" data-num="22">
+					<div class="text-wrapper full">
+						<div class="primary-text">
+							Если нет желания долго наращивать социальный капитал, его <strong>можно купить</strong>
+						</div>
+						<div class="secondary-text">
+							Социальный капитал лучше денег: он приносит пользу и при этом не уменьшается
+						</div>
+					</div>
+				</div>
+				<div class="slide" data-num="23">
+					<div class="image-wrapper full">
+						<img src="/illustrations/16.svg" alt="" />
+					</div>
+				</div>
+
+				<div class="slide" data-num="24">
+					<div class="text-wrapper full">
+						<div class="primary-text">
+							Накопившийся социальный капитал в ВИЗе можно <strong>превратить в деньги</strong>
+						</div>
+						<div class="secondary-text">
+							Если вы очень популярны, продавайте свободный капитал, монетизируйте свой успех
+						</div>
+					</div>
+				</div>
+				<div class="slide" data-num="25">
+					<div class="image-wrapper full">
+						<img src="/illustrations/15.svg" alt="" />
+					</div>
+				</div>
+
+				<div class="slide" data-num="26">
+					<div class="text-wrapper full">
+						<div class="primary-text">
+							В ВИЗе можно строить свой бизнес <strong>без разрешений и ограничений</strong>
+						</div>
+						<div class="secondary-text">
+							Программируйте, рекламируйте, помогайте другим использовать их социальный капитал
+						</div>
+					</div>
+				</div>
+				<div class="slide" data-num="27">
+					<div class="image-wrapper full">
+						<img src="/illustrations/17.svg" alt="" />
+					</div>
+				</div>
+
+				<div class="slide" data-num="28" data-end="true">
+					<div class="text-wrapper full">
+						<div class="primary-text">
+							В ВИЗе много других возможностей, о которых вы узнаете, когда начнёте его использовать.<br>
+							Например, <strong>прямо сейчас</strong>!<br>
+							<center><a class="close-presentation-action" href="#steps" style="box-shadow:none;font-size:1.5em;padding-bottom:5px;border-bottom:0px dashed #fff;">&darr;&darr;&darr;&darr;&darr;</a></center>
 						</div>
 					</div>
 				</div>
@@ -489,11 +717,20 @@ print '
 			<p>Увеличить свой цифровой социальный капитал можно быстро и просто - купив необходимое количество визов на свободном рынке. Большой капитал увеличит ваше влияние в экосистеме, пользуйтесь этим, пока токены не подорожали.</p>
 			<p>В экосистеме ВИЗа стихийно развиваются площадки, на которых покупатели и продавцы визов находят друг друга. Напомним, в ВИЗе нет администрации или главной компании, все отношения между участниками экосистемы - их личное дело, они никем не контролируются, а все сделки необратимы. Выбирайте партнёров осмотрительно и старайтесь контролировать риски.</p>
 			<div class="columns-view">
+				<!--
 				<div class="column column-2 viz-promo">
 					<a href="https://coins.black/?search_from=VIZ" target="_blank">
 					<img src="/images/coinsblack.png" alt="">
 					<span class="name">COINS.BLACK<span class="source">coins.black</span></span>
 					<span class="descr">Продажа и покупка визов за деньги и криптовалюту множеством способов в основном без регистрации и проверок. Работает через оператора, поэтому ночью и в некоторые другие моменты обмен может быть отложен на некоторое время. Самый простой способ покупки и продажи визов для неспециалистов.</span>
+					</a>
+				</div>
+				-->
+				<div class="column column-2 viz-promo">
+					<a href="https://menaskop.xyz/" target="_blank">
+					<img src="/images/menaskop.jpg" alt="">
+					<span class="name">Обменник Menaskop<span class="source">menaskop.xyz</span></span>
+					<span class="descr">Прямая продажа токенов viz за несколько видов криптовалют. Возможны крупные сделки. Цена viz указана в долларах, цена в криптовалюте рассчитывается в долларах автоматически на основе объёма заказа и курса соответствующей валюты к доллару. Самый удобный вариант для покупателей, имеющих криптовалюту.</span>
 					</a>
 				</div>
 				<div class="column column-2 viz-promo">
@@ -520,6 +757,10 @@ print '
 					</a>
 				</div>
 			</div>
+			<!--
+			<div class="columns-view">
+			</div>
+			-->
 		</div>
 		';
 
@@ -567,10 +808,6 @@ print '
 					</a>
 				</div>
 			</div>
-
-			<p>Если у вас есть свободные ресурсы для вложения в ВИЗ, используйте их максимально эффективно: участвуйте в наших раундах финансирования работ в рамках Инициативы VIZPLUS!</p>
-
-			<p>Мы продаём заинтересованным инвесторам токены viz лотами по 100 USDT по низким ценам (можно купить несколько лотов). Все собранные средства направляются на создание и развитие новых сервисов. После выполнения очередного этапа работ и передачи его сообществу в свободный доступ, мы запрашиваем  оплату из Фонда ДАО. Полученные из Фонда токены viz снова предлагаются инвесторам. Для уточнения деталей и покупки viz свяжитесь с нами.</p>
 
 			<p>Если вы занимаетесь разработкой программного обеспечения, веб-дизайном, переводами, ботами для соцсетей и мессенджеров, интерфейсами и т.п. и заинтересованы в развитии экосистемы ВИЗ, мы готовы обсудить с вами варианты сотрудничества.</p>
 

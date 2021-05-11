@@ -561,12 +561,12 @@ span.secondary{
 	background:linear-gradient(45deg, #f89408 0%, #f47204 100%);
 }
 .card h3.list span.n9{
-	background:#f71800;
-	background:linear-gradient(45deg, #ff8a29 0%, #f71800 100%);
+	background:#f77300;
+	background:linear-gradient(45deg, #ffc729 0%, #f77300 100%);
 }
 .card h3.list span.n10{
-	background:#d50000;
-	background:linear-gradient(45deg, #fa3e2c 0%, #d50000 100%);
+	background:#ff9a00;
+	background:linear-gradient(45deg, #fa3e2c 0%, #ffe100 100%);
 }
 
 .card h4{
@@ -2310,6 +2310,11 @@ h2 .view-hash{
 }
 .presentation .slide .image-wrapper img{
 	width:100%;
+	max-height:100vh;
+}
+.presentation .slide .image-wrapper img.with-text{
+	width:100%;
+	max-height:80vh;
 }
 .presentation .slide .text-wrapper{
 	font-family:'Roboto',Arial,Helvetica Neue,sans-serif;
@@ -2322,6 +2327,19 @@ h2 .view-hash{
 	justify-content:center;
 	background:#4285f4;
 	color:#fff;
+}
+.presentation .slide .image-wrapper .primary-text{
+	font-family:'Roboto',Arial,Helvetica Neue,sans-serif;
+	font-size:3.2em;
+	align-items:center;
+	justify-content:center;
+	padding-bottom:2vh;
+}
+.presentation .slide .image-wrapper div.secondary-text{
+	font-family:'Roboto',Arial,Helvetica Neue,sans-serif;
+	font-size:1.5em;
+	padding:1vh 2vw;
+	padding-top:2vh;
 }
 .presentation .slide .text-wrapper .primary-text{
 	font-size:1.55em;
@@ -2596,6 +2614,30 @@ h2 .view-hash{
 	.presentation .slide .text-wrapper{
 		justify-content:flex-start;
 		padding-top:0.5vh;
+	}
+
+	.presentation .slide .image-wrapper img.with-text{
+		width:100%;
+		max-height:40vh;
+	}
+
+	.adaptive-show{
+		display:inline-block;
+	}
+	.adaptive-hide{
+		display:none;
+	}
+	.adaptive-show-block{
+		display:block;
+	}
+	.adaptive-hide-block{
+		display:none;
+	}
+	.adaptive-show-flex{
+		display:flex;
+	}
+	.adaptive-hide-flex{
+		display:none;
 	}
 }
 @media only screen and (min-width:0) and (max-width:650px){

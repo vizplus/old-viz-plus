@@ -1,3 +1,17 @@
+var lang_arr=[];
+lang_arr['en']=[];
+lang_arr['en']['expand']='Expand';
+lang_arr['en']['collapse']='Collapse';
+lang_arr['en']['prev_slide']='Previous slide';
+lang_arr['en']['next_slide']='Next slide';
+
+lang_arr['ru']=[];
+lang_arr['ru']['expand']='Развернуть';
+lang_arr['ru']['collapse']='Свернуть';
+lang_arr['ru']['prev_slide']='Предыдущий слайд';
+lang_arr['ru']['next_slide']='Следующий слайд';
+
+
 function escape_html(text) {
 	var map = {
 		'&': '&amp;',
@@ -34,17 +48,17 @@ function app_mouse(e){
 	if($(target).hasClass('close-presentation-action')){
 		if($('.presentation').hasClass('fullscreen')){
 			$('.presentation').removeClass('fullscreen');
-			$('.toggle-fullscreen-action').html('Развернуть');
+			$('.toggle-fullscreen-action').html(lang_arr[selected_lang]['expand']);
 		}
 	}
 	if($(target).hasClass('toggle-fullscreen-action')){
 		if($('.presentation').hasClass('fullscreen')){
 			$('.presentation').removeClass('fullscreen');
-			$(target).html('Развернуть');
+			$(target).html(lang_arr[selected_lang]['expand']);
 		}
 		else{
 			$('.presentation').addClass('fullscreen');
-			$(target).html('Свернуть');
+			$(target).html(lang_arr[selected_lang]['collapse']);
 		}
 		e.preventDefault();
 	}
@@ -116,7 +130,7 @@ function app_keyboard(e){
 	}
 	if(key==27){//esc
 		$('.presentation').removeClass('fullscreen');
-		$('.presentation .toggle-fullscreen-action').html('Развернуть');
+		$('.presentation .toggle-fullscreen-action').html(lang_arr[selected_lang]['expand']);
 		e.preventDefault();
 	}
 }
@@ -190,6 +204,10 @@ $(document).ready(function(){
 	document.addEventListener('keyup',app_keyboard,false);
 
 	let presentation=$('.presentation');
+	presentation.find('.toggle-fullscreen-action').html(lang_arr[selected_lang]['expand']);
+	presentation.find('.next-action').prop('title',lang_arr[selected_lang]['next_slide']);
+	presentation.find('.prev-action').prop('title',lang_arr[selected_lang]['prev_slide']);
+
 	let slide_count=presentation.find('.slide').length;
 	let current_slide=presentation.find('.slide.current');
 	let current_slide_num=current_slide.data('num');
@@ -215,6 +233,7 @@ $(document).ready(function(){
 			start_presentation_slider_timer=setTimeout(function(){start_presentation_slider()},start_presentation_slider_timeout);
 		}
 	});
+	//presentation[0].dispatchEvent(new MouseEvent('mouseover',{'view': window,'bubbles': true,'cancelable':true}));
 
 	if(current_slide.data('start')){
 		start_presentation_slider=true;

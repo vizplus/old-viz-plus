@@ -1,6 +1,6 @@
 <?php
 ob_start();
-$replace['title']='Главная - '.$replace['title'];
+$replace['title']=$ltmp_arr['index']['title'].' - '.$replace['title'];
 print '
 <div class="cards-view">
 	<div class="cards-container">';
@@ -10,37 +10,37 @@ print '
 				<div class="slide current" data-num="1" data-start="false" data-timeout="8000">
 					<div class="image-wrapper full" style="color:#4285f4;flex-direction:column;">
 						<div class="primary-text text-center text-big">
-							<strong>Что такое ВИЗ?</strong>
+							<strong>'.$ltmp_arr['index']['s1_1'].'</strong>
 						</div>
-						<img src="/illustrations/2-5-2.svg" alt="" style="max-height:95vh;max-width:95vw;padding:0 15px;" />
-						<div class="secondary-text text-center" style="padding-top:1.5vh;">Понятное объяснение в картинках</div>
+						<img src="/illustrations/2-5-2.svg" alt="" style="max-height:80vh;max-width:95vw;padding:0 15px;" />
+						<div class="secondary-text text-center" style="padding-top:1.5vh;">'.$ltmp_arr['index']['s1_2'].'</div>
 					</div>
 				</div>
 
 				<div class="slide" data-num="2" data-old-num="5">
 					<div class="image-wrapper half">
-						<img src="/illustrations/2-1-2.svg" alt="" style="width:95%" />
+						<img src="/illustrations/2-1-2'.('en'==$ltmp_current?'-en':'').'.svg" alt="" style="width:95%" />
 					</div>
 					<div class="text-wrapper half">
 						<div class="primary-text">
-							Когда вы делаете что-то для других, <strong>люди вам благодарны</strong>
+							'.$ltmp_arr['index']['s2_1'].'
 						</div>
 						<div class="secondary-text">
-							Лайки, спасибо, аплодисменты, плюсы и большие пальцы вверх &ndash; это проявления благодарности
+							'.$ltmp_arr['index']['s2_2'].'
 						</div>
 					</div>
 				</div>
 
 				<div class="slide" data-num="3" data-old-num="6">
 					<div class="image-wrapper half">
-						<img src="/illustrations/5.svg" alt="" />
+						<img src="/illustrations/5'.('en'==$ltmp_current?'-en':'').'.svg" alt="" />
 					</div>
 					<div class="text-wrapper half">
 						<div class="primary-text">
-							Сумма благодарностей от многих людей &ndash; <strong>ваш социальный капитал</strong>
+							'.$ltmp_arr['index']['s3_1'].'
 						</div>
 						<div class="secondary-text">
-							Чем больше людей вам благодарны, тем больше ваш социальный капитал
+							'.$ltmp_arr['index']['s3_2'].'
 						</div>
 					</div>
 				</div>
@@ -51,10 +51,10 @@ print '
 					</div>
 					<div class="text-wrapper half">
 						<div class="primary-text">
-							ВИЗ переводит социальный капитал в <strong>цифры</strong>
+							'.$ltmp_arr['index']['s4_1'].'
 						</div>
 						<div class="secondary-text">
-							Каждый лайк и каждое спасибо увеличивают ваш <strong>цифровой социальный капитал</strong> в ВИЗе
+							'.$ltmp_arr['index']['s4_2'].'
 						</div>
 					</div>
 				</div>
@@ -65,10 +65,10 @@ print '
 					</div>
 					<div class="text-wrapper half">
 						<div class="primary-text">
-							Накапливайте и используйте социальный капитал, <strong>где вам удобно</strong>
+							'.$ltmp_arr['index']['s5_1'].'
 						</div>
 						<div class="secondary-text">
-							ВИЗ-аккаунт можно подключить к социальным сетям, мессенджерам, сайтам, приложениям, играм и к реальной жизни
+							'.$ltmp_arr['index']['s5_2'].'
 						</div>
 					</div>
 				</div>
@@ -79,10 +79,10 @@ print '
 					</div>
 					<div class="text-wrapper half">
 						<div class="primary-text">
-							Ваш социальный капитал <strong>сохранится</strong>, несмотря ни на что
+							'.$ltmp_arr['index']['s6_1'].'
 						</div>
 						<div class="secondary-text">
-							Если ваш аккаунт в соцсети или мессенджере заблокируют, это не повлияет на накопленный вами социальный капитал
+							'.$ltmp_arr['index']['s6_2'].'
 						</div>
 					</div>
 				</div>
@@ -94,10 +94,10 @@ print '
 					</div>
 					<div class="text-wrapper half">
 						<div class="primary-text">
-							Когда вы благодарите других, их социальный капитал <strong>повышается</strong>
+							'.$ltmp_arr['index']['s7_1'].'
 						</div>
 						<div class="secondary-text">
-							Свободно поддерживайте всех, кто вам нравится, кто приносит вам пользу или удовольствие
+							'.$ltmp_arr['index']['s7_2'].'
 						</div>
 					</div>
 				</div>
@@ -109,10 +109,10 @@ print '
 					</div>
 					<div class="text-wrapper half">
 						<div class="primary-text">
-							При этом ваш социальный капитал не снижается, вы <strong>ничего не отдаёте</strong>
+							'.$ltmp_arr['index']['s8_1'].'
 						</div>
 						<div class="secondary-text">
-							Награды берутся из постоянной относительно небольшой эмиссии в блокчейне
+							'.$ltmp_arr['index']['s8_2'].'
 						</div>
 					</div>
 				</div>
@@ -123,10 +123,10 @@ print '
 					</div>
 					<div class="text-wrapper half">
 						<div class="primary-text">
-							Награждая других, вы мотивируете их делать что-то <strong>полезное или приятное для вас</strong>
+							'.$ltmp_arr['index']['s9_1'].'
 						</div>
 						<div class="secondary-text">
-							Люди охотнее отвечают на большую благодарность.<br>Влияйте на тех, кто вам нравится
+							'.$ltmp_arr['index']['s9_2'].'
 						</div>
 					</div>
 				</div>
@@ -137,10 +137,10 @@ print '
 					</div>
 					<div class="text-wrapper half">
 						<div class="primary-text">
-							Чем больше ваш социальный капитал, тем <strong>сильнее</strong> вы награждаете
+							'.$ltmp_arr['index']['s10_1'].'
 						</div>
 						<div class="secondary-text">
-							Награждайте многих людей понемногу или крупно награждайте некоторых
+							'.$ltmp_arr['index']['s10_2'].'
 						</div>
 					</div>
 				</div>
@@ -152,10 +152,10 @@ print '
 					</div>
 					<div class="text-wrapper half">
 						<div class="primary-text">
-							Чем больше ваш социальный капитал, <strong>тем охотнее люди помогают вам</strong>
+							'.$ltmp_arr['index']['s11_1'].'
 						</div>
 						<div class="secondary-text">
-							Если вы приносите много пользы другим, они рады принести больше пользы вам
+							'.$ltmp_arr['index']['s11_2'].'
 						</div>
 					</div>
 				</div>
@@ -163,17 +163,19 @@ print '
 				<div class="slide" data-num="12" data-old-num="10">
 					<div class="image-wrapper half" style="color:#4285f4;flex-direction:column;">
 						<div class="primary-text text-center text-big" style="font-size:1.5em">
-							Только вы управляете своим социальным капиталом
+							'.$ltmp_arr['index']['s12_1'].'
 						</div>
 						<img src="/illustrations/9-2.svg" alt="" class="with-text" style="max-width:98%" />
-						<div class="secondary-text text-center" style="font-size:1.5em;padding-top:2.5vh;">без посредников, запретов, банов и цензуры</div>
+						<div class="secondary-text text-center" style="font-size:1.5em;padding-top:2.5vh;">
+							'.$ltmp_arr['index']['s12_2'].'
+						</div>
 					</div>
 					<div class="text-wrapper half">
 						<div class="primary-text">
-							ВИЗ хранит ваш социальный капитал в блокчейне
+							'.$ltmp_arr['index']['s12_3'].'
 						</div>
 						<div class="secondary-text">
-							Блокчейн – безопасная система. Никто не имеет доступа к вашему социальному капиталу
+							'.$ltmp_arr['index']['s12_4'].'
 						</div>
 					</div>
 				</div>
@@ -184,10 +186,10 @@ print '
 					</div>
 					<div class="text-wrapper half">
 						<div class="primary-text">
-							Если нет желания долго наращивать социальный капитал, его <strong>можно купить</strong>
+							'.$ltmp_arr['index']['s13_1'].'
 						</div>
 						<div class="secondary-text">
-							Социальный капитал лучше денег: он приносит пользу и при этом не уменьшается
+							'.$ltmp_arr['index']['s13_2'].'
 						</div>
 					</div>
 				</div>
@@ -198,10 +200,10 @@ print '
 					</div>
 					<div class="text-wrapper half">
 						<div class="primary-text">
-							Накопившийся социальный капитал в ВИЗе можно <strong>превратить в деньги</strong>
+							'.$ltmp_arr['index']['s14_1'].'
 						</div>
 						<div class="secondary-text">
-							Если вы очень популярны, продавайте свободный капитал, монетизируйте свой успех
+							'.$ltmp_arr['index']['s14_2'].'
 						</div>
 					</div>
 				</div>
@@ -212,19 +214,17 @@ print '
 					</div>
 					<div class="text-wrapper half">
 						<div class="primary-text">
-							В ВИЗе можно строить свой бизнес <strong>без разрешений и ограничений</strong>
+							'.$ltmp_arr['index']['s15_1'].'
 						</div>
 						<div class="secondary-text">
-							Программируйте, рекламируйте, помогайте другим использовать их социальный капитал
+							'.$ltmp_arr['index']['s15_2'].'
 						</div>
 					</div>
 				</div>
 				<div class="slide" data-num="16" data-old-num="19" data-end="true">
 					<div class="text-wrapper full">
 						<div class="primary-text">
-							В ВИЗе много других возможностей, о которых вы узнаете, когда начнёте его использовать.<br>
-							Например, <strong>прямо сейчас</strong>!<br>
-							<center><a class="close-presentation-action" href="#steps" style="box-shadow:none;font-size:1.5em;padding-bottom:5px;border-bottom:0px dashed #fff;">&darr;&darr;&darr;&darr;&darr;</a></center>
+							'.$ltmp_arr['index']['s16'].'
 						</div>
 					</div>
 				</div>
@@ -240,11 +240,11 @@ print '
 				</div>
 
 				<div class="player">
-					<a class="prev-action" title="Предыдущий слайд">«</a>
-					<a class="next-action" title="Следующий слайд">»</a>
+					<a class="prev-action" title="">«</a>
+					<a class="next-action" title="">»</a>
 					<div class="bottom-line">
 						<span class="slide-counter">&mdash; / &mdash;</span>
-						<a class="toggle-fullscreen-action">Развернуть</a>
+						<a class="toggle-fullscreen-action">&hellip;</a>
 					</div>
 				</div>
 			</div>
@@ -256,54 +256,54 @@ print '
 				<div class="slide current" data-num="1" data-start="false" data-timeout="8000">
 					<div class="image-wrapper full" style="color:#4285f4;flex-direction:column;">
 						<div class="primary-text text-center text-big">
-							<strong>Что такое ВИЗ?</strong>
+							<strong>'.$ltmp_arr['index']['s1_1'].'</strong>
 						</div>
 						<img src="/illustrations/2-5-2.svg" alt="" style="max-height:95vh" />
-						<div class="secondary-text text-center" style="padding-top:1.5vh;">Понятное объяснение в картинках</div>
+						<div class="secondary-text text-center" style="padding-top:1.5vh;">'.$ltmp_arr['index']['s1_2'].'</div>
 					</div>
 				</div>
 
 				<div class="slide" data-num="2">
 					<div class="text-wrapper full">
 						<div class="primary-text">
-							Когда вы делаете что-то для других, <strong>люди вам благодарны</strong>
+							'.$ltmp_arr['index']['s2_1'].'
 						</div>
 						<div class="secondary-text">
-							Лайки, спасибо, аплодисменты, плюсы и большие пальцы вверх &ndash; это проявления благодарности
+							'.$ltmp_arr['index']['s2_2'].'
 						</div>
 					</div>
 				</div>
 
 				<div class="slide" data-num="3">
 					<div class="image-wrapper full">
-						<img src="/illustrations/2-1-2.svg" alt="" style="width:98%" />
+						<img src="/illustrations/2-1-2'.('en'==$ltmp_current?'-en':'').'.svg" alt="" style="width:98%" />
 					</div>
 				</div>
 
 				<div class="slide" data-num="4">
 					<div class="text-wrapper full">
 						<div class="primary-text">
-							Сумма благодарностей от многих людей &ndash; <strong>ваш социальный капитал</strong>
+							'.$ltmp_arr['index']['s3_1'].'
 						</div>
 						<div class="secondary-text">
-							Чем больше людей вам благодарны, тем больше ваш социальный капитал
+							'.$ltmp_arr['index']['s3_2'].'
 						</div>
 					</div>
 				</div>
 
 				<div class="slide" data-num="5">
 					<div class="image-wrapper full">
-						<img src="/illustrations/5.svg" alt="" />
+						<img src="/illustrations/5'.('en'==$ltmp_current?'-en':'').'.svg" alt="" />
 					</div>
 				</div>
 
 				<div class="slide" data-num="6">
 					<div class="text-wrapper full">
 						<div class="primary-text">
-							Накапливайте и используйте социальный капитал, <strong>где вам удобно</strong>
+							'.$ltmp_arr['index']['s5_1'].'
 						</div>
 						<div class="secondary-text">
-							ВИЗ-аккаунт можно подключить к социальным сетям, мессенджерам, сайтам, приложениям, играм и к реальной жизни
+							'.$ltmp_arr['index']['s5_2'].'
 						</div>
 					</div>
 				</div>
@@ -317,10 +317,10 @@ print '
 				<div class="slide" data-num="8">
 					<div class="text-wrapper full">
 						<div class="primary-text">
-							Ваш социальный капитал <strong>сохранится</strong>, несмотря ни на что
+							'.$ltmp_arr['index']['s6_1'].'
 						</div>
 						<div class="secondary-text">
-							Если ваш аккаунт в соцсети или мессенджере заблокируют, это не повлияет на накопленный вами социальный капитал
+							'.$ltmp_arr['index']['s6_2'].'
 						</div>
 					</div>
 				</div>
@@ -334,10 +334,10 @@ print '
 				<div class="slide" data-num="10">
 					<div class="text-wrapper full">
 						<div class="primary-text">
-							Когда вы благодарите других, их социальный капитал <strong>повышается</strong>
+							'.$ltmp_arr['index']['s7_1'].'
 						</div>
 						<div class="secondary-text">
-							Свободно поддерживайте всех, кто вам нравится, кто приносит вам пользу или удовольствие
+							'.$ltmp_arr['index']['s7_2'].'
 						</div>
 					</div>
 				</div>
@@ -351,10 +351,10 @@ print '
 				<div class="slide" data-num="12">
 					<div class="text-wrapper full">
 						<div class="primary-text">
-							При этом ваш социальный капитал не снижается, вы <strong>ничего не отдаёте</strong>
+							'.$ltmp_arr['index']['s8_1'].'
 						</div>
 						<div class="secondary-text">
-							Награды берутся из постоянной относительно небольшой эмиссии в блокчейне
+							'.$ltmp_arr['index']['s8_2'].'
 						</div>
 					</div>
 				</div>
@@ -367,10 +367,10 @@ print '
 				<div class="slide" data-num="14">
 					<div class="text-wrapper full">
 						<div class="primary-text">
-							Награждая других, вы мотивируете их делать что-то <strong>полезное или приятное для вас</strong>
+							'.$ltmp_arr['index']['s9_1'].'
 						</div>
 						<div class="secondary-text">
-							Люди охотнее отвечают на большую благодарность.<br>Влияйте на тех, кто вам нравится
+							'.$ltmp_arr['index']['s9_2'].'
 						</div>
 					</div>
 				</div>
@@ -383,10 +383,10 @@ print '
 				<div class="slide" data-num="16">
 					<div class="text-wrapper full">
 						<div class="primary-text">
-							Чем больше ваш социальный капитал, тем <strong>сильнее</strong> вы награждаете
+							'.$ltmp_arr['index']['s10_1'].'
 						</div>
 						<div class="secondary-text">
-							Награждайте многих людей понемногу или крупно награждайте некоторых
+							'.$ltmp_arr['index']['s10_2'].'
 						</div>
 					</div>
 				</div>
@@ -400,10 +400,10 @@ print '
 				<div class="slide" data-num="18">
 					<div class="text-wrapper full">
 						<div class="primary-text">
-							Чем больше ваш социальный капитал, <strong>тем охотнее люди помогают вам</strong>
+							'.$ltmp_arr['index']['s11_1'].'
 						</div>
 						<div class="secondary-text">
-							Если вы приносите много пользы другим, они рады принести больше пользы вам
+							'.$ltmp_arr['index']['s11_2'].'
 						</div>
 					</div>
 				</div>
@@ -416,30 +416,32 @@ print '
 				<div class="slide" data-num="20">
 					<div class="text-wrapper full">
 						<div class="primary-text">
-							ВИЗ хранит ваш социальный капитал в блокчейне
+							'.$ltmp_arr['index']['s12_3'].'
 						</div>
 						<div class="secondary-text">
-							Блокчейн – безопасная система. Никто не имеет доступа к вашему социальному капиталу
+							'.$ltmp_arr['index']['s12_4'].'
 						</div>
 					</div>
 				</div>
 				<div class="slide" data-num="21">
 					<div class="image-wrapper full" style="color:#4285f4;flex-direction:column;">
 						<div class="primary-text text-center text-big" style="font-size:1.5em">
-							Только вы управляете своим социальным капиталом
+							'.$ltmp_arr['index']['s12_1'].'
 						</div>
 						<img src="/illustrations/9-2.svg" alt="" class="with-text" />
-						<div class="secondary-text text-center" style="font-size:1.5em;padding-top:2.5vh;">без посредников, запретов, банов и цензуры</div>
+						<div class="secondary-text text-center" style="font-size:1.5em;padding-top:2.5vh;">
+							'.$ltmp_arr['index']['s12_2'].'
+						</div>
 					</div>
 				</div>
 
 				<div class="slide" data-num="22">
 					<div class="text-wrapper full">
 						<div class="primary-text">
-							Если нет желания долго наращивать социальный капитал, его <strong>можно купить</strong>
+							'.$ltmp_arr['index']['s13_1'].'
 						</div>
 						<div class="secondary-text">
-							Социальный капитал лучше денег: он приносит пользу и при этом не уменьшается
+							'.$ltmp_arr['index']['s13_2'].'
 						</div>
 					</div>
 				</div>
@@ -452,10 +454,10 @@ print '
 				<div class="slide" data-num="24">
 					<div class="text-wrapper full">
 						<div class="primary-text">
-							Накопившийся социальный капитал в ВИЗе можно <strong>превратить в деньги</strong>
+							'.$ltmp_arr['index']['s14_1'].'
 						</div>
 						<div class="secondary-text">
-							Если вы очень популярны, продавайте свободный капитал, монетизируйте свой успех
+							'.$ltmp_arr['index']['s14_2'].'
 						</div>
 					</div>
 				</div>
@@ -468,10 +470,10 @@ print '
 				<div class="slide" data-num="26">
 					<div class="text-wrapper full">
 						<div class="primary-text">
-							В ВИЗе можно строить свой бизнес <strong>без разрешений и ограничений</strong>
+							'.$ltmp_arr['index']['s15_1'].'
 						</div>
 						<div class="secondary-text">
-							Программируйте, рекламируйте, помогайте другим использовать их социальный капитал
+							'.$ltmp_arr['index']['s15_2'].'
 						</div>
 					</div>
 				</div>
@@ -484,9 +486,7 @@ print '
 				<div class="slide" data-num="28" data-end="true">
 					<div class="text-wrapper full">
 						<div class="primary-text">
-							В ВИЗе много других возможностей, о которых вы узнаете, когда начнёте его использовать.<br>
-							Например, <strong>прямо сейчас</strong>!<br>
-							<center><a class="close-presentation-action" href="#steps" style="box-shadow:none;font-size:1.5em;padding-bottom:5px;border-bottom:0px dashed #fff;">&darr;&darr;&darr;&darr;&darr;</a></center>
+							'.$ltmp_arr['index']['s16'].'
 						</div>
 					</div>
 				</div>
@@ -502,11 +502,11 @@ print '
 				</div>
 
 				<div class="player">
-					<a class="prev-action" title="Предыдущий слайд">«</a>
-					<a class="next-action" title="Следующий слайд">»</a>
+					<a class="prev-action" title="">«</a>
+					<a class="next-action" title="">»</a>
 					<div class="bottom-line">
 						<span class="slide-counter">&mdash; / &mdash;</span>
-						<a class="toggle-fullscreen-action">Развернуть</a>
+						<a class="toggle-fullscreen-action">&hellip;</a>
 					</div>
 				</div>
 			</div>
@@ -514,42 +514,71 @@ print '
 		';
 
 
-		print '<div class="card transparent" id="steps"><h1 class="captions bold">ВИЗ шаг за шагом</h1></div>';
+		print '<div class="card transparent" id="steps">';
+		if('ru'==$ltmp_current){
+			print '<p style="text-align:right;font-size:16px;line-height:20px;margin-bottom:10px;"><a style="opacity:0.8;" href="/?lang=en">English version</a></p><br>';
+		}
+		if('en'==$ltmp_current){
+			print '<p style="text-align:right;font-size:16px;line-height:20px;margin-bottom:10px;"><a style="opacity:0.8;" href="/?lang=ru">Русская версия</a></p><br>';
+		}
+		print '<h1 class="captions bold">'.$ltmp_arr['index']['steps'].'</h1></div>';
 		print '
 		<div class="card">
-			<h3 class="captions left list"><span class="n1">1</span>Создайте свой первый ВИЗ-аккаунт</h3>
-			<p>На <a href="https://start.viz.plus/" target="_blank">start.viz.plus</a> пройдите базовый микрокурс по основам ВИЗа и создайте аккаунт. Это займёт несколько минут и не потребует передачи ваших личных данных.</p>
+			<h3 class="captions left list"><span class="n1">1</span>'.$ltmp_arr['index']['step1'].'</h3>
+			<p>'.$ltmp_arr['index']['step1_text'].'</p>
 		</div>
 		';
 
 		print '
 		<div class="card">
-			<h3 class="captions left list"><span class="n2">2</span>Получайте ответы на возникающие вопросы</h3>
-			<p>Откройте <a href="https://about.viz.plus/" target="_blank">about.viz.plus</a> &mdash; подборку вопросов и ответов для начинающих участников ВИЗа и заглядывайте в неё, если на следующих шагах что-то окажется непонятным. На этом же подсайте вы найдёте подробную информацию о ВИЗе для разработчиков, предпринимателей и инвесторов.</p>
+			<h3 class="captions left list"><span class="n2">2</span>'.$ltmp_arr['index']['step2'].'</h3>
+			<p>'.$ltmp_arr['index']['step2_text'].'</p>
 		</div>
 		';
 
 		print '
 		<div class="card">
-			<h3 class="captions left list"><span class="n3">3</span>Подключите ваш аккаунт к Личному кабинету</h3>
-			<p>Зайдите на <a href="https://my.viz.plus/" target="_blank">my.viz.plus</a>, введите имя аккаунта и <strong>активный</strong> приватный ключ, чтобы получить доступ к операциям. Осмотритесь, походите по страницам, ознакомьтесь с функциями приложения, заполните профиль аккаунта, если хотите.</p>
+			<h3 class="captions left list"><span class="n3">3</span>'.$ltmp_arr['index']['step3'].'</h3>
+			<p>'.$ltmp_arr['index']['step3_text'].'</p>
 		</div>
 		';
 
 		print '
 		<div class="card">
-			<h3 class="captions left list"><span class="n4">4</span>Установите браузерное расширение Vizonator</h3>
-			<p>Расширение для браузеров Chrome (<a href="https://chrome.google.com/webstore/detail/vizonator/iehoehfkanaobnbldjfjfabbpaiiojnp" target="_blank">установка</a>) и Firefox (<a href="https://addons.mozilla.org/ru/firefox/addon/vizonator/" target="_blank">установка</a>) позволяет награждать и получать награды непосредственно в Twitter’е, Youtube’е, SoundCloud и на других сайтах (список будет расширяться). Установите расширение и добавьте в него ваш аккаунт и <strong>обычный</strong> приватный ключ.</p>
+			<h3 class="captions left list"><span class="n4">4</span>'.$ltmp_arr['index']['step4'].'</h3>
+			<p>'.$ltmp_arr['index']['step4_text'].'</p>
 		</div>
 		';
 
 		print '
 		<div class="card">
-			<h3 class="captions left list"><span class="n5">5</span>Подключите ваш аккаунт к Телеграм-боту VIZ Social bot</h3>
-			<p>Запустите <a href="https://t.me/viz_social_bot" target="_blank">VIZ Social bot</a> и добавьте в него ваш виз-аккаунт, введя обычный приватный ключ. Следуйте инструкциям в боте.</p>
-			<p>Принимайте участие в обсуждениях в группах, будьте полезными и интересными другим участникам. Получайте награды и увеличивайте свой цифровой социальный капитал.</p>
-			<p>Предложите админам чатов и каналов, в которых вы состоите, добавить VIZ Social bot, чтобы получать и раздавать награды.</p>
-			<p><span class="toggle-action" data-toggle="telegram-items">▼ Проверьте список каналов и групп в Телеграме с виз-ботом и подпишитесь на те, что вам интересны</span></p>
+			<h3 class="captions left list"><span class="n5">5</span>'.$ltmp_arr['index']['step5'].'</h3>
+			'.$ltmp_arr['index']['step5_text'].'';
+		/*
+		if('en'==$ltmp_current){
+			print '<p><span class="toggle-action" data-toggle="telegram-items">▼ Check the list of channels and groups in Telegram with the viz-bot and subscribe to the ones you are interested in</span></p>';
+			print '
+			<div class="toggle-item telegram-items">
+				<div class="columns-view">
+					<div class="column column-2 viz-promo">
+						<a href="https://t.me/eng_viz_faq" target="_blank">
+						<span class="name"><img src="https://telegram.viz.world/file/AQADAgADMq8xG7GtUUgACAIAA3u609cW____H_zM8PlGptogBA" alt="Telegram channel eng_viz_faq">VIZ Support<span class="source">telegram</span></span>
+						<span class="descr">Support group on english.</span>
+						</a>
+					</div>
+					<div class="column column-2 viz-promo">
+						<a href="https://t.me/web3news" target="_blank">
+						<span class="name"><img src="https://telegram.viz.world/file/AQADAgATsPy3DwAEAgADrN_54hb___-PgI2UBbK54EhYAwABHgQ" alt="Telegram channel web3news">Web 3.0<span class="source">telegram</span></span>
+						<span class="descr">Новости, аналитика, ссылки, видео о развитии нового Интернета. Автор - один из самых известных российских аналитиков в сфере блокчейн-технологий (Menaskop).</span>
+						</a>
+					</div>
+				</div>
+			</div>';
+		}
+		*/
+		if('ru'==$ltmp_current){
+			print '<p><span class="toggle-action" data-toggle="telegram-items">▼ Проверьте список каналов и групп в Телеграме с виз-ботом и подпишитесь на те, что вам интересны</span></p>';
+			print '
 			<div class="toggle-item telegram-items">
 				<div class="columns-view">
 					<div class="column column-2 viz-promo">
@@ -649,23 +678,42 @@ print '
 						</a>
 					</div>
 				</div>
-			</div>
+			</div>';
+		}
+		print '
 		</div>
 		';
 
 		print '
 		<div class="card">
-			<h3 class="captions left list"><span class="n6">6</span>Подключите ваш аккаунт к социальной сети без цензуры Readdle.Me</h3>
-			<p>Перейдите на <a href="https://readdle.me/#dapp:account/" target="_blank">Readdle.Me</a>, введите имя своего аккаунта и приватный <strong>обычный</strong> ключ.</p>
-			<p>Напишите первый пост, а потом расскажите своим друзьям в других социальных сетях и мессенджерах, что теперь у вас есть площадка для общения, которую невозможно заблокировать и цензурировать.</p>
+			<h3 class="captions left list"><span class="n6">6</span>'.$ltmp_arr['index']['step6'].'</h3>
+			'.$ltmp_arr['index']['step6_text'].'
 		</div>
 		';
 
 		print '
 		<div class="card">
-			<h3 class="captions left list"><span class="n7">7</span>Получайте информацию о ВИЗе</h3>
-			<p>Экосистема ВИЗа развивается, и активному участнику сообщества стоит следить за новостями, анонсами и обсуждениями.</p>
-			<p>Выберите, какой способ доступа к новостям о ВИЗе вам удобнее, и будьте в курсе всего, что происходит в экосистеме.</p>
+			<h3 class="captions left list"><span class="n7">7</span>'.$ltmp_arr['index']['step7'].'</h3>
+			'.$ltmp_arr['index']['step7_text'].'';
+		if('en'==$ltmp_current){
+			print '
+				<div class="columns-view">
+					<div class="column column-2 viz-promo">
+						<a href="https://t.me/eng_viz_faq" target="_blank">
+						<span class="name"><img src="https://telegram.viz.world/file/AQADAgADMq8xG7GtUUgACAIAA3u609cW____H_zM8PlGptogBA" alt="Telegram channel eng_viz_faq">VIZ Support<span class="source">telegram</span></span>
+						<span class="descr">Support group on english.</span>
+						</a>
+					</div>
+					<div class="column column-2 viz-promo">
+						<a href="https://t.me/viz_world" target="_blank">
+						<span class="name"><img src="https://telegram.viz.world/file/AQADAgATD2lfDwAEAgADN5OV4hb___-eiikR9EoDjc8iBQABHgQ" alt="Telegram channel viz_world">VIZ.World<span class="source">telegram</span></span>
+						<span class="descr">Popular group about VIZ. Communication between users, information about new developments, discussion of both the VIZ concept and specific issues.</span>
+						</a>
+					</div>
+				</div>';
+		}
+		if('ru'==$ltmp_current){
+			print '
 				<div class="columns-view">
 					<div class="column column-2 viz-promo">
 						<a href="https://viz.media/" target="_blank">
@@ -707,15 +755,16 @@ print '
 						<span class="descr">Телеграм-бот в режиме реального времени поставляет данные о событиях в блокчейне VIZ. Можно настраивать фильтры, чтобы следить за конкретными операциями или аккаунтами.</span>
 						</a>
 					</div>
-				</div>
+				</div>';
+			}
+		print '
 		</div>
 		';
 
 		print '
 		<div class="card">
-			<h3 class="captions left list"><span class="n8">8</span>Изучите возможности покупки и продажи визов</h3>
-			<p>Увеличить свой цифровой социальный капитал можно быстро и просто - купив необходимое количество визов на свободном рынке. Большой капитал увеличит ваше влияние в экосистеме, пользуйтесь этим, пока токены не подорожали.</p>
-			<p>В экосистеме ВИЗа стихийно развиваются площадки, на которых покупатели и продавцы визов находят друг друга. Напомним, в ВИЗе нет администрации или главной компании, все отношения между участниками экосистемы - их личное дело, они никем не контролируются, а все сделки необратимы. Выбирайте партнёров осмотрительно и старайтесь контролировать риски.</p>
+			<h3 class="captions left list"><span class="n8">8</span>'.$ltmp_arr['index']['step8'].'</h3>
+			'.$ltmp_arr['index']['step8_text'].'
 			<div class="columns-view">
 				<!--
 				<div class="column column-2 viz-promo">
@@ -729,15 +778,15 @@ print '
 				<div class="column column-2 viz-promo">
 					<a href="https://menaskop.xyz/" target="_blank">
 					<img src="/images/menaskop.jpg" alt="">
-					<span class="name">Обменник Menaskop<span class="source">menaskop.xyz</span></span>
-					<span class="descr">Прямая продажа токенов viz за несколько видов криптовалют. Возможны крупные сделки. Цена viz указана в долларах, цена в криптовалюте рассчитывается в долларах автоматически на основе объёма заказа и курса соответствующей валюты к доллару. Самый удобный вариант для покупателей, имеющих криптовалюту.</span>
+					<span class="name">'.$ltmp_arr['index']['menaskop-xyz-name'].'<span class="source">menaskop.xyz</span></span>
+					<span class="descr">'.$ltmp_arr['index']['menaskop-xyz-text'].'</span>
 					</a>
 				</div>
 				<div class="column column-2 viz-promo">
 					<a href="https://t.me/vizplus_trade" target="_blank">
-					<img src="/images/tg-vizplus_trade.png" alt="">
+					<img src="/images/tg-vizplus_trade'.('en'==$ltmp_current?'-en':'').'.png" alt="">
 					<span class="name">viz+trade<span class="source">telegram</span></span>
-					<span class="descr">Телеграм-группа для торговли визами, курируемая Инициативой VIZPLUS. Доска объявлений о покупке и продаже визов участниками. Предлагайте, договаривайтесь, проводите сделки под свою ответственность.</span>
+					<span class="descr">'.$ltmp_arr['index']['vizplus_trade'].'</span>
 					</a>
 				</div>
 			</div>
@@ -745,15 +794,15 @@ print '
 				<div class="column column-2 viz-promo">
 					<a href="https://viz.media/shop" target="_blank">
 					<img src="/images/viz-media-checks.png" alt="">
-					<span class="name">Магазин чеков ВИЗа<span class="source">viz.media</span></span>
-					<span class="descr">Продажа визов в виде чеков за рубли, доллары, евро с использованием банковских карт, Webmoney, QIWI, счетов мобильных операторов и пр. Купленные чеки можно погасить на свой аккаунт в Личном кабинете my.viz.plus. Магазин предлагает чеки на разные суммы. Работает автоматически.</span>
+					<span class="name">'.$ltmp_arr['index']['viz-media-checks-name'].'<span class="source">viz.media</span></span>
+					<span class="descr">'.$ltmp_arr['index']['viz-media-checks-text'].'</span>
 					</a>
 				</div>
 				<div class="column column-2 viz-promo">
 					<a href="https://wallet.bitshares.org/#/market/XCHNG.VIZ_RUDEX.USDT" target="_blank">
 					<img src="/images/bitshares.png" alt="">
-					<span class="name">Децентрализованная криптобиржа Bitshares<span class="source">wallet.bitshares.org</span></span>
-					<span class="descr">Автоматическая покупка и продажа визов в парах с USDT, BTS, BTC. Требует понимания биржевой торговли и знакомства с не самым простым интерфейсом биржи. Не рекомендуется для новичков и проведения разовых сделок.</span>
+					<span class="name">'.$ltmp_arr['index']['bitshares-name'].'<span class="source">wallet.bitshares.org</span></span>
+					<span class="descr">'.$ltmp_arr['index']['bitshares-text'].'</span>
 					</a>
 				</div>
 			</div>
@@ -766,57 +815,50 @@ print '
 
 		print '
 		<div class="card">
-			<h3 class="captions left list"><span class="n9">9</span>Погрузитесь в идеи ВИЗа и измените свою жизнь к лучшему</h3>
-			<p>ВИЗ - это новый слой Интернета и новая экономика для важной части вашей жизни. Чем раньше и глубже вы проникнете в <a href="https://about.viz.plus/whitepaper/" target="_blank">идеи и философию ВИЗа</a>, тем полезнее и выгоднее для вас будет участие в его росте.</p>
+			<h3 class="captions left list"><span class="n9">9</span>'.$ltmp_arr['index']['step9'].'</h3>
+			<p>'.$ltmp_arr['index']['step9_text'].'</p>
 		</div>
 		';
 
 		print '
 		<div class="card">
-			<h3 class="captions left list"><span class="n10">10</span>Примите участие в работе Инициативы VIZPLUS</h3>
-			<p>Инициатива VIZPLUS - частный некоммерческий проект. Мы проектируем, заказываем, финансируем разработку и поддерживаем работу ключевых сервисов для участников ВИЗа. Мы содержим ноды блокчейна VIZ - как полную публичную, так и несколько делегатских. Также мы помогаем распространять информацию о ВИЗе, привлекаем в ВИЗ разработчиков и инвесторов.</p>
+			<h3 class="captions left list"><span class="n10">10</span>'.$ltmp_arr['index']['step10'].'</h3>
+			<p>'.$ltmp_arr['index']['step10_text'].'</p>
 
 			<div class="columns-view">
 				<div class="column column-2 viz-promo">
 					<a href="https://start.viz.plus/" target="_blank">
-					<img src="/images/start-viz-plus.png" alt="">
+					<img src="/images/start-viz-plus'.('en'==$ltmp_current?'-en':'').'.png" alt="">
 					<span class="name">start.VIZ+<span class="source">start.viz.plus</span></span>
-					<span class="descr">Простой и безопасный способ создания вашего первого аккаунта в ВИЗе. Вам не придётся сообщать сервису какую-либо личную информацию, а ваши ключи не передаются на сервер.</span>
+					<span class="descr">'.$ltmp_arr['index']['start-viz-plus'].'</span>
 					</a>
 				</div>
 				<div class="column column-2 viz-promo">
 					<a href="https://about.viz.plus/" target="_blank">
-					<img src="/images/about-viz-plus.png" alt="">
+					<img src="/images/about-viz-plus'.('en'==$ltmp_current?'-en':'').'.png" alt="">
 					<span class="name">about.VIZ+<span class="source">about.viz.plus</span></span>
-					<span class="descr">Необходимая информация для владельцев социального капитала, разработчиков, предпринимателей и инвесторов. Теория и практика ВИЗа для тех, кто хочет знать больше.</span>
+					<span class="descr">'.$ltmp_arr['index']['about-viz-plus'].'</span>
 					</a>
 				</div>
 			</div>
 			<div class="columns-view">
 				<div class="column column-2 viz-promo">
 					<a href="https://my.viz.plus/" target="_blank">
-					<img src="/images/my-viz-plus.png" alt="">
+					<img src="/images/my-viz-plus'.('en'==$ltmp_current?'-en':'').'.png" alt="">
 					<span class="name">my.VIZ+<span class="source">my.viz.plus</span></span>
-					<span class="descr">Ваш личный кабинет в ВИЗе. Практически все функции блокчейна в простом и понятном интерфейсе. Работает и как сайт, и как автономное веб-приложение с прямым доступом в блокчейн.</span>
+					<span class="descr">'.$ltmp_arr['index']['my-viz-plus'].'</span>
 					</a>
 				</div>
 				<div class="column column-2 viz-promo">
 					<a href="https://info.viz.plus/" target="_blank">
-					<img src="/images/info-viz-plus.png" alt="">
+					<img src="/images/info-viz-plus'.('en'==$ltmp_current?'-en':'').'.png" alt="">
 					<span class="name">info.VIZ+<span class="source">info.viz.plus</span></span>
-					<span class="descr">Актуальные данные о состоянии блокчейна VIZ, параметры экономики, графики активности. История операций аккаунтов. Сведения о делегатах ВИЗа. Блок-эксплорер.</span>
+					<span class="descr">'.$ltmp_arr['index']['info-viz-plus'].'</span>
 					</a>
 				</div>
 			</div>
-
-			<p>Если вы занимаетесь разработкой программного обеспечения, веб-дизайном, переводами, ботами для соцсетей и мессенджеров, интерфейсами и т.п. и заинтересованы в развитии экосистемы ВИЗ, мы готовы обсудить с вами варианты сотрудничества.</p>
-
-			<p>Если вы представляете крупные сообщества и хотите подключиться к экосистеме социального капитала раньше конкурентов, обратитесь к нам за консультациями и технической поддержкой. Мы предоставим готовые решения или разработаем их специально для вас, а также делегируем большой объём социального капитала для развития вашего сообщества.</p>
-
-			<p><strong>Контакты</strong><br>
-			<a href="mailto:vizplus@protonmail.com">vizplus@protonmail.com</a><br>
-			Телеграм: <a href="https://t.me/ae_viz_plus" target="_blank">для личной переписки</a>, <a href="https://t.me/vizplus" target="_blank">публичная группа</a>
-			</p>
+			'.$ltmp_arr['index']['afterwords'].'
+			<p>'.$ltmp_arr['index']['contacts'].'</p>
 		</div>
 		';
 	print '
